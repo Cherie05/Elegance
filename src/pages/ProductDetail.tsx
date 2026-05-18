@@ -254,18 +254,20 @@ const ProductDetail = () => {
                     </div>
                   </div>
                   
-                  <div className="flex flex-wrap gap-4 mb-8">
-                    <button className="apple-button flex-grow md:flex-grow-0 flex items-center justify-center space-x-2">
+                  <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                    <button className="apple-button w-full sm:w-auto flex items-center justify-center space-x-2">
                       <ShoppingCart className="w-4 h-4 mr-2" />
                       <span>Add to Cart</span>
                     </button>
-                    <button className="apple-button flex-grow md:flex-grow-0 bg-white text-primary border border-border hover:bg-muted flex items-center justify-center">
-                      <Heart className="w-4 h-4 mr-2" />
-                      <span>Wishlist</span>
-                    </button>
-                    <button className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-muted transition-colors">
-                      <Share2 className="w-5 h-5" />
-                    </button>
+                    <div className="flex gap-4 w-full sm:w-auto">
+                      <button className="apple-button flex-grow sm:flex-grow-0 bg-white text-primary border border-border hover:bg-muted flex items-center justify-center">
+                        <Heart className="w-4 h-4 mr-2" />
+                        <span>Wishlist</span>
+                      </button>
+                      <button className="w-12 h-12 flex-shrink-0 rounded-full border border-border flex items-center justify-center hover:bg-muted transition-colors">
+                        <Share2 className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
                 </FadeIn>
                 
